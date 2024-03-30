@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://kit.fontawesome.com/7a22d1cc83.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container-space">
+        <nav>
+          <img src="Images/My__Logo.png" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT ME</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i id="icon" class="fa-regular fa-sun" title="Click for light mode"></i>
+          <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>FULL STACK WEB DEPELOPER</p>
+          <h1>I am <span>Paramita Dey</span> from West Bengal, India.</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+      <div class="container-space">
+        <div class="division">
+          <div class="left-about">
+            <img src="Images/PortfolioPicture2.png" alt="" />
+          </div>
+          <div class="right-about">
+            <h1>ABOUT ME</h1>
+            <p>
+              I am a Student of Techno India University , Saltlake Sector 5, Kolkata , India. Currently I am pursuing my B.Tech
+               degree in Computer Science and Engineering where I am specialising in full-stack web development, Data Structures and
+               Algorithms, Object Oriented Programming, UX/UI design
+               and cloud computing.
+            </p>
+            <ul class="titles">
+              <li class="titles-list active-title" onclick="opentab('Skills')">
+                Skills
+              </li>
+              <li class="titles-list" onclick="opentab('Experience')">
+                Experience
+              </li>
+              <li class="titles-list" onclick="opentab('Education')">
+                Education
+              </li>
+            </ul>
+            <div class="title-contents active-title-contents" id="Skills">
+              <ul>
+                <li>
+                  <span>Web Development</span
+                  ><br />HTML,CSS,Javascript,ReactJs,MongoDB
+                </li>
+                <li><span>Programing Languages</span><br />C,C++,Java</li>
+              </ul>
+            </div>
+            <div class="title-contents" id="Experience">
+              <ul>
+                <li>No Experience, Fresher</li>
+              </ul>
+            </div>
+            <div class="title-contents" id="Education">
+              <ul>
+                <li>
+                  <span>2021-2025</span><br />B.Tech in CSE from Techno India
+                  University
+                </li>
+                <li><span>2020</span><br />Higher Secondary Examination</li>
+                <li><span>2018</span><br />Secondary Examination</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services -->
+    <div id="services">
+      <div class="container-space">
+        <h1>My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Web Design</h2>
+            <p>
+              As a web developer, I bring ideas to life through expert coding and innovative design techniques. From front-end to back-end development, I create dynamic and responsive websites that drive engagement and deliver results. With a focus on user experience and functionality, I strive to provide clients with cutting-edge online solutions that meet their unique needs and propel their businesses forward.
+            </p>
+            <a href="#">LEARN MORE</a>
+          </div>
+          <div>
+            <h2>UI/UX Design</h2>
+            <p>
+              As a UX/UI designer, I focus on creating seamless digital experiences that captivate users and drive engagement. Through user-centric design principles, I craft intuitive interfaces that prioritize usability and aesthetics. My goal is to elevate your brand's online presence by delivering designs that foster meaningful interactions and conversions.
+            </p>
+            <a href="#">LEARN MORE</a>
+          </div>
+          <div>
+            <h2>C,C++,Python and Java</h2>
+            <p>
+              With proficiency in C/C++, Python, and Java, I excel in developing efficient and scalable software solutions. Specializing in C/C++, I bring a strong foundation in high-level programming, complemented by versatile skills in Python and Java. My expertise enables me to deliver high-quality code that meets project requirements and ensures optimal performance across platforms.
+            </p>
+            <a href="#">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container-space">
+        <h1>My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./Images/PhoneImage.webp" alt="Img1" />
+            <div class="layer">
+              <h3>QR code Generator app</h3>
+              <p>
+                This web application allows you to generate QR code by taking a text or an url as input.
+              </p>
+              <a href="https://github.com/Deyparamita/QR-Code-Generator"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Images/LaptopImg.webp" alt="Img2" />
+            <div class="layer">
+              <h3>The Calender</h3>
+              <p>
+                This web application provides current day,month,year and date.
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./Images/PhoneImg.webp" alt="Img3" />
+            <div class="layer">
+              <h3>News App</h3>
+              <p>
+                The News App is a web application that allows users to browse and read news articles from various categories. Users can select a category of interest, view a list of news articles within that category.
+              </p>
+              <a href="https://github.com/Deyparamita/News-App" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container-space">
+        <div class="contact-division">
+          <div class="contact-left">
+            <h1>Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>deyparamita369@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>0123456789</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/paramita-dey-a738b924b" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/Deyparamita" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href=""></a>
+            </div>
+            <a href="./Images/ParamitaDeyCV.pdf" download class="btn CVbtn">Download CV</a>
+          </div>
+          <div class="contact-right">
+             <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="text" name="Email" placeholder="Your Email" required>
+              <textarea placeholder="Your Message" name="Message" id="" cols="15" rows="5"></textarea>
+              <button type="submit" class="btn CVbtn">Submit</button>
+             </form>
+             <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy Paramita. Made by Paramita</p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxJ6Gqdq9MYKfVkdWKqFmwpHNaGLROf0Njv0S5zUjZVliKczBE_AHfN02jt8QDhOaf4yQ/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg");
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = 'Form submited successfully.'
+            setTimeout(function(){
+              msg.innerHTML=""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
