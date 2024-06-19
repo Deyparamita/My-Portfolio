@@ -3,11 +3,13 @@ icon.onclick = function() {
   document.body.classList.toggle("light-theme");
   if (document.body.classList.contains("light-theme")) {
     icon.classList.remove("fa-regular", "fa-sun");
+    icon.title="Click for dark mode";
     icon.classList.add("fa-regular", "fa-moon");
   } 
   else {
     icon.classList.remove("fa-regular", "fa-moon");
     icon.classList.add("fa-regular", "fa-sun");
+    icon.title="Click for light mode";
   }
 }
 

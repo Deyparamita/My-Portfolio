@@ -25,10 +25,13 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(Images/PortfolioPicture1.png);
+  background-image:url(Images/ProfilePicture1.png);
   background-size: 500px 600px;
+  /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: right;
+  /* background-position: left; */
+
 }
 nav {
   display: flex;
@@ -99,7 +102,7 @@ nav li a:hover::after {
 .left-about img {
   /* border: 2px solid rgb(68, 0, 255);  */
   height: 500px;
-  width: 490px;
+  width: 390px;
 }
 .right-about h1 {
   margin-bottom: 8%;
@@ -204,7 +207,7 @@ nav li a:hover::after {
 .work-list {
   /* border: 2px solid red;  */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
@@ -214,9 +217,11 @@ nav li a:hover::after {
 .work img {
   /* border: 2px solid rgb(30, 0, 255);  */
   max-width: 100%;
-  height: auto;
+  height: 300px;
+  width: 400px;
   border-radius: 10px;
 }
+
 .layer {
   width: 100%;
   height:0;
@@ -336,7 +341,7 @@ nav .fa-solid{
   display: none;
 }
 /* ----------------CSS for small screen------------------ */
-@media only screen and (max-width:650px) {
+@media only screen and (max-width:755px) {
   nav ul{
     flex-direction: column;
     text-align: right;
@@ -405,10 +410,3 @@ nav .fa-solid{
   margin-top: -30px;
 }
 
-
-@media only screen and (min-width: 650px) and (max-width: 1534px) {
-  body.light-theme .header-text h1,
-  body.light-theme .header-text p {
-    color: rgb(36, 8, 247);
-  }
-}
